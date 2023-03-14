@@ -1,0 +1,62 @@
+#mens{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border: solid; */
+    margin: 10px;
+    padding: 10px;
+    column-gap: 15px;
+}
+#mens div{
+    /* border: solid; */
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    background-color: rgb(238, 238, 238);
+}
+img{
+    width: 100%;
+}
+.container {
+    position: relative;
+}
+
+.container div h1{
+    position: absolute;
+    top: 20%;
+    left: 16px;
+    /* border: solid; */
+}
+.container div p{
+    position: absolute;
+    top: 40%;
+    left: 16px;
+    /* border: solid; */
+}
+.container div button{
+    position: absolute;
+    top: 60%;
+    left: 16px;
+    background-color: black;
+    color: white;
+    /* border: solid; */
+}
+#hvr:hover{
+    background-color: gray;
+}
+
+
+#container2{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#container2 input{
+    width: 200px;
+    height: 50px;
+    /* border: solid chartreuse; */
+}
+#container2 input>img{
+    width: 200px;
+    height: 50px;
+    border: solid chartreuse;
+    border: solid;
+}
