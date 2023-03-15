@@ -48,15 +48,38 @@ img{
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
+#container2 div{
+    /* border: solid; */
+    /* justify-content: center; */
+    padding: 10px;
+}
+#container2 div a img,p{
+    /* border: solid; */
+    margin-top:20px;
+    text-align: center;
+}
 
-#container2 input{
-    width: 200px;
-    height: 50px;
-    /* border: solid chartreuse; */
+#container3{
+    display: grid;;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 10px 0 10px;
 }
-#container2 input>img{
-    width: 200px;
-    height: 50px;
-    border: solid chartreuse;
-    border: solid;
+
+#container3 div{
+    /* border: solid; */
+    padding: 10px;
+    text-align: center;
 }
+
+#container4 div+div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* border: solid; */
+}
+#container4 div div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* border: solid; */
+    margin: 10px;
+}
+
