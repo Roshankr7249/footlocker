@@ -1,12 +1,19 @@
 .header{
     background-color:black ;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top:0;
     left:2px;
 }
 .top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    right: auto;
+    padding: 10px;
     height: 30px;
+    gap: 20px;
     color: white;
    
     /* border: 1px solid rgb(139, 234, 24); */
@@ -120,4 +127,95 @@ hr{
 }
 .carticon{
     color: white;
+}
+
+
+
+
+
+
+/* ........footer........ */
+
+
+.footer{
+    border: solid;
+
+}
+.mainfooter{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:10px;
+    background-color: black;
+    
+}
+.container{
+    color: white;
+}
+.container a{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(200, 194, 194);
+    /* border: solid yellow; */
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 16px;
+    width: 250px;
+    text-decoration: none;
+
+    
+}
+
+/* .container a span{
+    height: 50px;
+    border: solid yellow;
+} */
+.cl{
+    font-size: 50px;
+    color: red;
+    margin-top: -40px;
+    font-weight: bolder;
+}
+/* .footeranc a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    
+} */
+.container1{
+    color: white;
+}
+.container1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding-top: 1px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: -50px;
+    padding-left: -30px;
+    margin-top: -20px;
+}
+.imagetag{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+
+}
+.imagetag img{
+    width: 40px;
+    padding: 10px;
+}
+.apple{
+    width: 300px;
+}
+.gpay{
+    width: 300px;
 }
