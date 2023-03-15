@@ -37,6 +37,7 @@ img{
     left: 16px;
     background-color: black;
     color: white;
+    height: 50px;
     /* border: solid; */
 }
 #hvr:hover{
@@ -71,6 +72,12 @@ img{
     text-align: center;
 }
 
+#container3 div h1{
+    /* border: solid; */
+    margin: 5% 10% 05% 10%;
+}
+
+
 #container4 div+div{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -81,5 +88,40 @@ img{
     grid-template-columns: repeat(1,1fr);
     /* border: solid; */
     margin: 10px;
+    align-content: flex-start;
+}
+#container4 div div p{
+    /* border: solid; */
+    margin: 10% 15% 5% 10%;
+    text-align-last: center;
 }
 
+.container5 {
+    position: relative;
+}
+
+.container5 div h1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    /* border: solid; */
+}
+.container5 div p{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 60%;
+    text-align: justify;
+    color: white;
+    /* border: solid; */
+}
+.container5 div button{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background-color:white;
+    color: black;
+    height: 50px;
+    /* border: solid; */
+}
