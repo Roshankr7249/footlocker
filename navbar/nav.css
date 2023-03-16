@@ -1,0 +1,221 @@
+.header{
+    background-color:black ;
+    /* position: fixed; */
+    width: 100%;
+    top:0;
+    left:2px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    right: auto;
+    padding: 10px;
+    height: 30px;
+    gap: 20px;
+    color: white;
+   
+    /* border: 1px solid rgb(139, 234, 24); */
+}
+
+hr{
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    /* background-color: black;  */
+    color:white;
+    height: 80px;
+    
+   
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid yellow; */
+    align-items: center;
+    /* background-color: black; */
+    width: 60%;
+    margin-left: -150px;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* border: 1px solid black; */
+    /* justify-content: space-between; */
+    align-items: center;
+    
+
+}
+.left ul li{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size:16px;
+    margin-top: 20px;
+    
+}
+
+.logo img{
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-color: rgb(50, 12, 176);
+    border-left :1px solid blue;
+    border-right:1px solid blue;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    /* padding-right: 100px; */
+    
+    justify-content: space-between; 
+    /* background-color: white; */
+    
+    
+
+}
+.searchbar{
+    display: flex;
+    background-color: white;
+    padding: 7px 10px;
+    border: 0.5px solid grey;
+    border-radius: 2px;
+}
+.searchbar input{
+    border: none;
+    padding-top: 8px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.searchbar img{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    padding-right: 4px;
+    
+    /* padding-top:10px ; */
+    /* align-items: center;
+    justify-content: space-between; */
+}
+.cart a img{
+    color: white;
+}
+.cart{
+    margin: 0px, 40px;
+}
+
+
+.cart a img{
+    width: 20px;
+    height: 20px;
+    color: white;
+  
+    /* padding-left: 20px; */
+}
+.carticon{
+    color: white;
+}
+
+
+
+
+
+
+/* ........footer........ */
+
+
+.footer{
+    border: solid;
+
+}
+.mainfooter{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:10px;
+    background-color: black;
+    
+}
+.container{
+    color: white;
+}
+.container a{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(200, 194, 194);
+    /* border: solid yellow; */
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 16px;
+    width: 250px;
+    text-decoration: none;
+
+    
+}
+
+/* .container a span{
+    height: 50px;
+    border: solid yellow;
+} */
+.cl{
+    font-size: 50px;
+    color: red;
+    margin-top: -40px;
+    font-weight: bolder;
+}
+/* .footeranc a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    
+} */
+.container1{
+    color: white;
+}
+.container1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding-top: 1px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: -50px;
+    padding-left: -30px;
+    margin-top: -20px;
+}
+.imagetag{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+
+}
+.imagetag img{
+    width: 40px;
+    padding: 10px;
+}
+.apple{
+    width: 300px;
+}
+.gpay{
+    width: 300px;
+}
