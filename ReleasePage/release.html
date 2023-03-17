@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release</title>
+    <style>
+        .actionBtns{
+            background-color: grey;
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 50px;
+            margin: 20px
+        }
+        .moveBtn{
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background-color: black;
+            color: white;
+        }
+        .actionBtn{
+            width: 50%;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .rightBtn{
+            transform:translateX(98%); 
+        }
+        .data{
+            display: none;
+        }
+        .upcome{
+            margin-top: 20px;
+            display: block;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border: solid; */
+            column-gap: 15px;
+            row-gap: 30px;
+            background-color: rgb(224, 222, 222);
+            padding: 20px;
+        }
+        .upcome div:hover{
+            /* display: block; */
+            pointer-events: visible;
+            /* scale: 1.3; */
+            cursor: pointer;
+            border: solid black;
+        }
+
+        .upcome div p{
+            /* border: solid; */
+            width: 80%;
+            margin: 0px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .upcome div img{
+            /* border: solid; */
+            background-color: white;
+            display: block;
+            width: 100%;
+        }
+
+        .launch{
+            margin-top: 10px;
+            display: block;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border: solid; */
+            column-gap: 15px;
+            row-gap: 30px;
+            background-color: rgb(224, 222, 222);
+            padding: 20px;
+        }
+        .launch div p{
+            /* border: solid; */
+            width: 80%;
+            margin: 0px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .launch div img{
+            /* border: solid; */
+            background-color: white;
+            display: block;
+            width: 100%;
+        }
+        .launch div:hover{
+            /* display: block; */
+            pointer-events: visible;
+            /* scale: 1.3; */
+            cursor: pointer;
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="font-weight: bold; font-size:xx-large; margin: 20px;">Release Calendar</h1>
+        <p style="font-weight: bold;font-size: large; margin: 20px" >All shoes launch at 10am ET / 9am CT unless otherwise noted</p>
+
+    </div>
+    <div class="wrapper">
+        <div class="parents">
+            <div class="actionBtns">
+                <button class="actionBtn UPCOMING">UPCOMING</button>
+                <button class="actionBtn LAUNCHED">LAUNCHED</button>
+                <button class="moveBtn">UPCOMING</button>
+            </div>
+            <div class="user">
+                <div class="data upcome upco">
+                    <div>
+                        <img id="my_img" src="https://images.footlocker.com/is/image/EBFL2/39197001?wid=400&hei=400&fmt=png-alpha" alt="PUMA Future Rider x Spongebob">
+                        <p>PUMA Future Rider x Spongebob</p><br>
+                        <p>MENS &nbsp;Color:YELLOW/YELLOW</p><br>
+                        <p>$ 90.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/39164601?wid=400&hei=400&fmt=png-alpha" alt="Toddler PUMA Slipstream Spongebob 2">
+                        <p>Toddler PUMA Slipstream Spongebob 2</p><br>
+                        <p>BOYS TODDLER &nbsp; Color:YELLOW/WHITE</p><br>
+                        <p>$ 70.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/39164401?wid=400&hei=400&fmt=png-alpha" alt="Grade School PUMA Slipstream Spongebob 2">
+                        <p>Grade School PUMA Slipstream Spongebob 2</p><br>
+                        <p>BOYS GRADE SCHOOL &nbsp; Color:YELLOW/WHITE</p><br>
+                        <p>$ 80.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/39164501?wid=400&hei=400&fmt=png-alpha" alt="Pre-School PUMA Slipstream Spongebob 2">
+                        <p>Pre-School PUMA Slipstream Spongebob 2</p><br>
+                        <p>BOYS PRE-SCHOOL &nbsp; Color:YELLOW/WHITE</p><br>
+                        <p>$ 75.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/39164501?wid=400&hei=400&fmt=png-alpha" alt="PUMA Slipstream x Spongebob">
+                        <p>PUMA Slipstream x Spongebob</p><br>
+                        <p>MENS &nbsp; Color:YELLOW/YELLOW</p><br>
+                        <p>$ 100.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/39118101?wid=400&hei=400&fmt=png-alpha" alt="Nike Air Trainer 3">
+                        <p>Nike Air Trainer 3</p><br>
+                        <p>MENS &nbsp; Color:WHITE/RED/BLACK</p><br>
+                        <p>$ 125.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/is/image/EBFL2/GC574DFN?wid=400&hei=400&fmt=png-alpha" alt="">
+                        <p>Grade School New Balance 574 Classic</p><br>
+                        <p>BOYS GRADE SCHOOL &nbsp; Color:BLACK/BLACK/GUM</p><br>
+                        <p>$ 75.00</p>
+                    </div>
+                    <div>
+                        <img src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/backpages/2021/promo-card/211001-FL-promo-card-app.png" alt="last one">
+                        <p>Shopping power at your fingertips</p><br>
+                        <p>Reserve your chance to win highly-anticipated sneaker releases and other exclusives through our mobile app.</p>
+                    </div>
+                </div>
+
+
+                <!-- another data -->
+               <div class="data inco">
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/R8784002?wid=400&hei=400&fmt=png-alpha" alt="Nike Lebron Nexxt Generation">
+                    <p>Nike Lebron Nexxt Generation</p><br>
+                    <p>MENS &nbsp;Color:GREY/PINK</p><br>
+                    <p>$ 160.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/HR1049?wid=400&hei=400&fmt=png-alpha" alt="Reebok Question Mid">
+                    <p>Reebok Question Mid</p><br>
+                    <p>MENS &nbsp; Color:WHITE/ORANGE</p><br>
+                    <p>$ 160.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/J6015402?wid=400&hei=400&fmt=png-alpha" alt="Grade School Nike Air Zoom G.T. Cut 2">
+                    <p>Grade School Nike Air Zoom G.T. Cut 2</p><br>
+                    <p>BOYS GRADE SCHOOL &nbsp;Color:LIGHT BLUE/AURA ORANGE</p><br>
+                    <p>$ 170.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/V9956118?wid=400&hei=400&fmt=png-alpha" alt="Store Only- Jordan Retro 2 Low - 620 S Broadway, Los Angeles, CA 90014">
+                    <p>Store Only- Jordan Retro 2 Low - 620 S Broadway, Los Angeles, CA 90014</p><br>
+                    <p>MENS &nbsp;Color:WH/BR/BG</p><br>
+                    <p>$ 150.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/V9956118?wid=400&hei=400&fmt=png-alpha" alt="Under Armour Curry 10">
+                    <p>Under Armour Curry 10</p><br>
+                    <p>MENS &nbsp;Color: WHITE/BLUE/SILVER</p><br>
+                    <p>$ 160.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/26293100?wid=400&hei=400&fmt=png-alpha" alt="Grade School Under Armour Curry 10">
+                    <p>Grade School Under Armour Curry 10</p><br>
+                    <p>BOYS GRADE SCHOOL &nbsp; Color:WHITE/BLUE/GRAY</p><br>
+                    <p>$ 130.00</p>
+                </div>
+                <div>
+                    <img src="https://images.footlocker.com/is/image/EBFL2/M0968100?wid=400&hei=400&fmt=png-alpha" alt="Toddler Jordan Retro 3">
+                    <p>Toddler Jordan Retro 3</p><br>
+                    <p>BOYS TODDLER &nbsp;Color:WHITE/RED/BLACK</p><br>
+                    <p>$ 75.00</p>
+                </div>
+                
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var upcoming=document.querySelector(".UPCOMING");
+    var incoming=document.querySelector(".LAUNCHED");
+    var moveBtn=document.querySelector(".moveBtn");
+
+    var upco=document.querySelector(".upco");
+    var inco=document.querySelector(".inco");
+    // inco.addEventListener("click",)
+
+    incoming.addEventListener("click",()=>{
+        moveBtn.classList.add("rightBtn");
+        inco.classList.add("launch");
+        upco.classList.remove("upcome");
+        moveBtn.innerHTML="LAUNCHED";
+    })
+
+    upcoming.addEventListener("click",()=>{
+        moveBtn.classList.remove("rightBtn");
+        inco.classList.remove("launch");
+        upco.classList.add("upcome");
+        moveBtn.innerHTML="UPCOMING";
+    })
+    
+    document.querySelector("#my_img").addEventListener("click",my_img);
+
+    function my_img(){
+        window.location.href="release2.html"
+    }
+</script>
