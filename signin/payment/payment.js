@@ -18,10 +18,13 @@ function applyDiscount() {
 	}
 	document.getElementById("total").value = total;
 }
-var amount = document.getElementById("amount").value;
-amount.textcontent = "#";
-document.queryselector("form").addEvenetlistener("submit",submitt);
-function submitt(){
-   window.location.href="header.html"
-    alert("payment done");
-}
+
+const amount = document.getElementById("amount");
+amount.textContent = "#";
+
+const form = document.querySelector("form");
+form.addEventListener("submit", function(event) {
+	event.preventDefault();
+	window.location.href = "success.html";
+	alert("Payment done");
+});
