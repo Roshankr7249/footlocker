@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-commerce Payment Page</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Footlocker Payment Page</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="address">Address:</label>
+			<textarea id="address" name="address" required></textarea>
+
+			<label for="card-number">Card Number:</label>
+			<input type="text" id="card-number" name="card-number" required>
+
+			<label for="expiry-date">Expiry Date:</label>
+			<input type="text" id="expiry-date" name="expiry-date" required>
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" required>
+
+			<label for="amount">Amount:</label>
+			<input type="text" id="amount" name="amount" required>
+
+			<label for="discount-code">Discount Code:</label>
+			<input type="text" id="discount-code" name="discount-code">
+
+			<button type="button" onclick="applyDiscount()">Apply Discount</button>
+
+			<label for="total">Total:</label>
+			<input type="text" id="total" name="total" readonly>
+
+			<button type="submit">Pay Now</button>
+		</form>
+	</div>
+
+	<script src="payment.js"></script>
+</body>
+</html>
