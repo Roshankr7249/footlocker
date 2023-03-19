@@ -187,7 +187,12 @@ display: none;
     gap: 80px;
 }
 
-
+.release a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 .list-name{
@@ -644,8 +649,12 @@ p {
     grid-template-columns: repeat(7,1fr);
     row-gap: 5px;
     column-gap: 5px;
+
+
     
 }
+
+
 #apple{
     margin-top: 20px;
     width: 10px;
